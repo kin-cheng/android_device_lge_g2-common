@@ -11,7 +11,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.audiorec=false \
-    persist.audio.fluence.speaker=true \
+    persist.audio.fluence.speaker=false \
     persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicerec=false \
     ro.qc.sdk.audio.fluencetype=fluence
@@ -43,15 +43,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.gps.agps_provider=1
 
 # Media/offload
-# TODO: Re-enable when it works
-PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.disable=true
-
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=true \
     audio.offload.pcm.16bit.enable=true \
     audio.offload.pcm.24bit.enable=true \
+    audio.offload.video=true \
     av.streaming.offload.enable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
